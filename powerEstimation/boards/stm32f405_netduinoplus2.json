@@ -1,0 +1,19 @@
+{
+  "core": "cortex-m4f",
+  "description": "Baseline cycle counts for ARM Cortex-M4F (Thumb-2), zero wait-states",
+  "instructions": {
+    "add_imm": { "cycles": 1 },
+    "add_reg": { "cycles": 1 },
+    "sub_imm": { "cycles": 1 },
+    "mov_imm": { "cycles": 1 },
+    "ldr":     { "cycles": 2 },
+    "str":     { "cycles": 2 },
+    "push":    { "base": 2, "per_reg": 1 },
+    "pop":     { "base": 2, "per_reg": 1 },
+    "bl":      { "cycles": 4 },
+    "b_taken": { "cycles": 2 },
+    "b_not":   { "cycles": 1 },
+    "nop":     { "cycles": 1 }
+  }
+}
+
